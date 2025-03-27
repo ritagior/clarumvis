@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap')
 
 /*
 	Hyperspace by HTML5 UP
@@ -98,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-	  background: #132234
+	  background: #1d3b5f; /*#1d3b5f*/
 		/*background: #312450;*/
 	}
 
@@ -116,8 +117,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		color: /*rgba(255, 255, 255, 0.55)*/rgba(255, 255, 255);
+		font-family: "Atkinson Hyperlegible", sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -202,10 +203,10 @@ input, select, textarea {
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);*/
-				background-image: -moz-linear-gradient(to right, #132234, #5CB6E0);
-				background-image: -webkit-linear-gradient(to right, #132234, #5CB6E0);
-				background-image: -ms-linear-gradient(to right, #132234, #5CB6E0);
-				background-image: linear-gradient(to right, #132234, #5CB6E0);
+				background-image: -moz-linear-gradient(to right, #1d3b5f, #84d8ff);
+				background-image: -webkit-linear-gradient(to right, #1d3b5f, #84d8ff);
+				background-image: -ms-linear-gradient(to right, #1d3b5f, #84d8ff);
+				background-image: linear-gradient(to right, #1d3b5f, #84d8ff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2542,7 +2543,7 @@ input, select, textarea {
 
 				.wrapper.style1 .icon.major:before {
 					/*color: #5e42a6;*/
-					color: #132234;
+					color: #1d3b5f;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -2567,7 +2568,7 @@ input, select, textarea {
 
 				.wrapper.style3-alt .icon.major:before {
 					/*color: #953d75;*/
-					color: #5CB6E0;
+					color: #84d8ff;
 				}
 
 /* Image */
@@ -3252,7 +3253,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #132234;/*#5e42a6;*/
+			background-color: #1d3b5f;/*#5e42a6;*/
 		}
 
 		.wrapper.style1-alt {
@@ -3272,7 +3273,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3-alt {
-			background-color: #5CB6E0;/*#953d75;*/
+			background-color: #84d8ff;/*#953d75;*/
 		}
 
 		.wrapper.fullscreen {
@@ -3778,10 +3779,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #4384A6, #5CB6E0/*#5e42a6, #b74e91*/);
-				background-image: -webkit-linear-gradient(to right, #4384A6, #5CB6E0 /*#5e42a6, #b74e91*/);
-				background-image: -ms-linear-gradient(to right, #4384A6, #5CB6E0 /*#5e42a6, #b74e91*/);
-				background-image: linear-gradient(to right, #4384A6, #5CB6E0 /*#5e42a6, #b74e91*/);
+				background-image: -moz-linear-gradient(to right, #4384A6, #84d8ff/*#5e42a6, #b74e91*/);
+				background-image: -webkit-linear-gradient(to right, #4384A6, #84d8ff /*#5e42a6, #b74e91*/);
+				background-image: -ms-linear-gradient(to right, #4384A6, #84d8ff /*#5e42a6, #b74e91*/);
+				background-image: linear-gradient(to right, #4384A6, #84d8ff /*#5e42a6, #b74e91*/);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3800,7 +3801,7 @@ input, select, textarea {
 				#sidebar nav a.active:after {
 					max-width: 100%;
 				}
-				
+
 			#sidebar .logo {
         position: absolute;
         /*bottom: 70px;*/
@@ -3929,3 +3930,70 @@ input, select, textarea {
 			}
 
 		}
+
+/*text on image*/
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+.image {
+  width: 100%; /* Ensure images take up full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  /*font-size: 18px; /* Adjust the font size as needed */
+  /*font-weight: bold;*/
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile Styles for text on image */
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack the images vertically on smaller screens */
+  }
+
+/*  .col-6 {
+    width: 100%; /* Ensure each column takes up the full width on mobile */
+/*    margin-bottom: 20px; /* Optional, space between images */
+/*  }*/
+  .centered {
+    font-size: 10px; /* Make the font smaller on mobile */
+    top: 2px; /* Adjust position for smaller screens */
+    left: 2px; /* Adjust position */
+  }
+}
